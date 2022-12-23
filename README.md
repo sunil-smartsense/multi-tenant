@@ -3,9 +3,11 @@
 There are Three way to create multi-tenant application architecture.
 
 1. Database per Tenant: Each Tenant has its own database and is isolated from other tenants.
-2. Shared Database, Separate Schema: All Tenants share a database, but have their own database schemas and tables.
-3. Shared Database, Shared Schema: All Tenants share a database and tables. Every table has a Column with the Tenant
+2. Shared Database, Shared Schema: All Tenants share a database and tables. Every table has a Column with the Tenant
+3. Shared Database, Separate Schema: All Tenants share a database, but have their own database schemas and tables.
    Identifier, that shows the owner of the row.
+
+![](src/main/resources/Diagram.png)
 
 This is a Spring Boot multi-tenant sample application which supports database par tenant i.e. first approach.
 
